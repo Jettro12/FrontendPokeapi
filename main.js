@@ -1,4 +1,4 @@
-const API_URL = "'https://backendpokeapi-production.up.railway.app'";
+const API_URL = "https://backendpokeapi-production.up.railway.app";
 
 // ===== LOGIN & REGISTRATION =====
 async function register() {
