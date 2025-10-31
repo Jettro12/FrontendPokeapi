@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000";
+const API_URL = "https://backendpokeapi-jrp3.onrender.com";
 
 // ===== LOGIN & REGISTRATION =====
 async function register() {
