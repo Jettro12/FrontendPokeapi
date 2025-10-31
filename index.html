@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - PokeApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PokeApp</h1>
+      <div class="form-box">
+        <h2>Login</h2>
+        <input type="text" id="login-username" placeholder="Username" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+
+        <p>Don't have an account? Sign up here:</p>
+        <input type="text" id="register-username" placeholder="New username" />
+        <input
+          type="password"
+          id="register-password"
+          placeholder="New password"
+        />
+        <button onclick="register()">Sign Up</button>
+
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

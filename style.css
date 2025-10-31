@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.form-box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+
+button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e63c3c;
+}
+
+.navbar {
+  background: #ff4444;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  margin: 20px;
+}
+
+/* MAIN FIX HERE */
+.results {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 250px;
+  min-height: 350px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
+/* Styles for card content */
+.card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.card p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.stats {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 2px 5px;
+}
+
+.stat-name {
+  font-weight: bold;
+  color: #ff4444;
+}
