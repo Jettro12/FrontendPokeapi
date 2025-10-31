@@ -4,7 +4,7 @@ const API_URL = "https://backendpokeapi-production.up.railway.app";
 async function register() {
   const username = document.getElementById("register-username").value;
   const password = document.getElementById("register-password").value;
-
+  console.log("Sending:", { username, password });
   if (!username || !password) {
     document.getElementById("message").innerText =
       "Username and password required";
@@ -17,8 +17,9 @@ async function register() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password }),
     });
-
+    console.log("Response status:", res.status);
     const data = await res.json();
+    console.log("Response data:", data);
     document.getElementById("message").innerText = res.ok
       ? "✅ User created successfully"
       : `❌ ${data.detail}`;
